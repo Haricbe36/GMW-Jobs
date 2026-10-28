@@ -20,7 +20,7 @@ th{font-size:12px;color:var(--ac);font-weight:700;background:var(--hf)}tr:nth-ch
 </style></head><body><div class="w" id="root"></div>
 <script>
 /* ===== SETUP: paste your Apps Script Web app URL (ends with /exec) between the quotes ===== */
-const API="PASTE_WEB_APP_URL_HERE";
+const API="https://script.google.com/macros/s/AKfycbxd1dcBsDKbX5SL91Xh7Tm48r1NcaVJO7jlulzgGn3wiVKdRTpiwIr0yBqvUNPSs1OL/exec";
 /* ======================================================================================== */
 const DEMO=[["2026-10-05","S101",8,"","Delivered",8,"2026-10-20"],["2026-10-06","S21",16,"","Delivered",16,"2026-10-12"],["2026-10-20","S163",13,"","Waiting for shot blasting","",""],["2026-10-20","S101",2,"2026-11-02","2 nos - 1st opr complete","",""],["2026-10-20","S102",4,"2026-10-30","4 nos - 1st opr complete","",""],["2026-10-23","S102",3,"2026-10-29","3 nos - 1st opr complete","",""],["2026-10-27","S102",4,"2026-10-31","4 nos - 1st opr under progress","",""]].map(r=>({date:r[0],item:r[1],qty:r[2],exp:r[3],status:r[4],delQty:r[5],delDate:r[6]}));
 const demo=API.startsWith("PASTE"),OWNER=location.hash==='#owner',ISO=/^\d{4}-\d{2}-\d{2}$/;
